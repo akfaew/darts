@@ -9,8 +9,8 @@ import (
 	"testing"
 )
 
-func Read(filename string) ([][]rune, error) {
-	dict := [][]rune{}
+func Read(filename string) ([][]byte, error) {
+	dict := [][]byte{}
 
 	f, err := os.OpenFile(filename, os.O_RDONLY, 0660)
 	if err != nil {
